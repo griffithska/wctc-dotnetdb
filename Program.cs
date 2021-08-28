@@ -23,7 +23,10 @@ namespace TicketingSystem
                     //read data from file
                     if (File.Exists(file))
                     {
+                        Console.Clear();
                         StreamReader sr = new StreamReader(file);
+                        //skip first line (comment out the below line if you want headers in the output)
+                        sr.ReadLine();
                         while (!sr.EndOfStream)
                         {
                             string line = sr.ReadLine();
