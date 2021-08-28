@@ -20,7 +20,21 @@ namespace TicketingSystem
 
                 if (choice == "1")
                 {
-                    // TODO: read data from file
+                    //read data from file
+                    if (File.Exists(file))
+                    {
+                        StreamReader sr = new StreamReader(file);
+                        while (!sr.EndOfStream)
+                        {
+                            string line = sr.ReadLine();
+                            string[] data = line.Split(',');
+                            Console.WriteLine("{0,-10} {1,-30} {2,-10} {3,-10} {4,-20} {5,-20} {6,-60}", data[0], data[1], data[2], data[3], data[4], data[5], data[6]);
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("File does not exist");
+                    }
                 }
                 else if (choice == "2")
                 {
