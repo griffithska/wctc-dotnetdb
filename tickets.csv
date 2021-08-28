@@ -1,2 +1,5 @@
 TicketID,Summary,Status,Priority,Submitter,Assigned,Watching
-1,This is a bug ticket,Open,High,Drew Kjell,Jane Doe,Drew Kjell|John Smith|Bill Jones
+1,This is a bug ticket,Open,High,Drew Kjell,Jane Doe,Drew Kjell|Bill Jones
+2,Feature Ticket,In Progress,Medium,Project Manager,Developer 1,Project Manager|CTO
+3,Research Request,On Hold,Low,Business Analyst,System Analyst,
+4,Outage,Open,URGENT,CEO,System Admin,CEO|Everyone

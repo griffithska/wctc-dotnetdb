@@ -33,6 +33,7 @@ namespace TicketingSystem
                             string[] data = line.Split(',');
                             Console.WriteLine("{0,-10} {1,-30} {2,-10} {3,-10} {4,-20} {5,-20} {6,-60}", data[0], data[1], data[2], data[3], data[4], data[5], data[6]);
                         }
+                        sr.Close();
                     }
                     else
                     {
