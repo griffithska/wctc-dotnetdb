@@ -93,7 +93,7 @@ namespace TicketingSystem
                                 System.Console.WriteLine("Enter the name of who is watching this ticket");
                                 watchers = Console.ReadLine();
                                 System.Console.WriteLine("Is anyone else watching this ticket (Y/N)?");
-                                string additional = Console.ReadLine();
+                                string additional = Console.ReadLine().ToUpper();
                                 do
                                 {
                                     System.Console.WriteLine("Who else is watching this ticket?");
